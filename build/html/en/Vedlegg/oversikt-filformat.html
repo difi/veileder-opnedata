@@ -1,0 +1,129 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Oversikt filformat &mdash; Åpne data - en veileder</title>
+    
+    <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Åpne data - en veileder" href="../index.html" />
+    <link rel="up" title="Vedlegg" href="index.html" />
+    <link rel="prev" title="Begreper og definisjoner" href="begreper-og-definisjoner.html" />
+
+  </head>
+  <body>
+<div id="page">
+	<div id="header">
+		<div id="parent">
+			<a href="http://www.difi.no/"><img src="http://data.norge.no/themes/contrib/difi/difi.png" height="30" width="143" alt="Direktoratet for forvaltning og IKT (Difi)" /></a>
+		</div>
+		<div id="name-and-slogan">
+			<div id="site-name">
+                <h1><a href="../index.html" title="Hjem" rel="home"><span>Åpne data - en veileder</span></a></h1>
+			</div>
+        </div>
+	</div>
+
+	<div id="navigation">
+		<ul id="main-menu" class="links clearfix">
+			<li class="menu-252 first active"><a href="../index.html" class="active">Hjem</a></li>
+		</ul>
+	</div>
+
+
+	<div id="main" class="has-sidebar">
+		<div id="content" class="column">
+			<a id="main-content"></a>
+			<div class="content">
+				
+  <div class="section" id="oversikt-filformat">
+<h1>Oversikt filformat<a class="headerlink" href="#oversikt-filformat" title="Permalink to this headline">¶</a></h1>
+<p><strong>JSON:</strong> JSON er en enkel tekstbasert standard for datautveksling. Den er opprinnelig avledet fra JavaScript for å representere enkle datastrukturer. Standarden er imidlertid uavhengig av JavaScript eller andre programmeringsspråk.</p>
+<p><strong>XML:</strong> XML er et mye brukt format for datautveksling. Formatet er et vanlig tekstformat, leselig for mennesker, der merker, eller tagger, gir informasjon om hva innholdet er.</p>
+<p><strong>RDF:</strong> RDF er er en gruppe av W3C-spesifikasjoner som beskriver en modell for å representere metadata, data om data. RDF-data kan blant annet kodes i XML og JSON. RDF kan entydig identifisere objekter og begreper ved hjelp av samlinger med beskrivelser av klasser og egenskaper. Dette gir store muligheter for utveksling av informasjon på tvers av systemer og teknologier. RDF er derfor egnet til å kommunisere og samordne data som kan lagres i ulike systemer, for eksempel i relasjonsdatabaser.</p>
+<p><strong>Regneark:</strong> Microsoft Excel er ofte brukt til å lagre data. Denne dataen kan ofte bli brukt direkte dersom beskrivelsene av hva de ulike kolonnene betyr/viser til. Men, i enkelte tilfeller kan regnearket inneholde makroer og former som er tungvint å jobbe med. Det er derfor anbefalt å legge slike regnestykker utenom regnearket, siden det da er lettere å lese for brukeren.</p>
+<p><strong>Comma Separated Files (CSV):</strong> CSV-filer kan være nyttige format siden de er kompakte og derfor passende til å overføre store datasett med same struktur. Men, formatet er så spartansk at det ofte er svært vanskelig å finne ut hvilke kolonner som er viktige. Derfor er det svært viktig i CSV-filer at beskrivelsen av de ulike feltene er nøyaktige.</p>
+<p><strong>Tekstdokument:</strong> Ordinære dokument i format som Word, ODF, OOXML eller PDF kan være godt nok til å vise enkelte typer data, for eksempel forholdsvis statiske epostlister eller lignende. Det kan være en billig løsning å fremstille dataen I, siden det er ofte dette formatet det blir opprettet i. Formatene holder ikke strukturen fast, hvilket betyr at det ofte er vanskelig å hente ut data automatisk. Dersom du benytter en av disse formatene, bør du bruke maler slik at det i det minste blir mulig å trekke ut informasjon fra dokumentene.</p>
+<p>Bruk av typografiformatering kan også støtte videre bruk av data, da det blir lettere for maskiner å skille overskrifter fra innholdet osv. Det er generelt ikke anbefalt å fremvise data i Word-format, dersom dataen finnes i et annet format.</p>
+<p><strong>Tekstfiler:</strong> Dokument med ren tekst (.txt) er veldig lette for datamaskiner å lese. De ekskluderer derimot vanligvis strukturerte metadata fra dokumentet, som betyr at utviklere må lage en algoritme som kan tolke/lese hvert dokument.</p>
+<p>Det kan oppstå enkelte problem ved utveksling av rene tekstfiler mellom operativsystem. MS Windows, Mac OS X og andre Unix-varianter har sine egne metoder å fortelle datamaskinen at de har kommet til slutten av en linje.</p>
+<p><strong>Scannet bilde:</strong> Dette er mest sannsynlig det minst passende formatet for det meste av data, men både TIFF og JPEG-2000 kan i det minste markere hva som er i bildet. Det kan være relevant å vise data som bilder dersom det opprinnelig ikke var elektronisk, som gamle kirkearkiv og andre arkivmateriale. Et bilde er uansett bedre enn ingenting.</p>
+<p><strong>Proprietære format:</strong> Enkelte dedikerte system har sine egne dataformat som de kan lagre eller eksportere data i. Det kan ofte være nok å vise data I slike format, spesielt dersom man forventer at videre bruk skal være I lignende system som de kom fra. Det bør alltid være indikert hvor du kan finne informasjon om disse proprietære formatene, for eksempel ved å legge ved en link til leverandørens nettside. Det er anbefalt å vise data i ikkeproprietære format, der det er mulig.</p>
+<p><strong>HTML:</strong> HTML er et markeringsspråk for formatering av nettsider med hypertekst og annen informasjon som kan vises i en nettleser. HTML benyttes til å strukturere informasjon,  angi noe tekst som overskrifter, avsnitt, lister og så videre – og kan, i en viss grad, brukes til å beskrive utseende og semantikk i et dokument.</p>
+<p><strong>Åpne filformat:</strong> Formatet som dataen er publisert kan enten være åpne eller lukkede. Et åpent format er et der spesifiseringen for programvaren er tilgjengelige for alle, kostnadsfritt, slik at alle kan bruke disse spesifikasjonene I sine egne programvarer uten begrensninger for gjenbruk eller bruk påført av immaterielle rettigheter.</p>
+<p>Dersom et proprietært filformat er lukket, er det enten fordi spesifikasjonene ikke er tilgjengelige eller gjenbruken er begrenset.</p>
+<p>I tråd med åpen forvaltning burde informasjon tilgjengeliggjøres i et åpent filformat som er maskinlesbart.</p>
+</div>
+
+
+			</div>
+		</div>
+		<div id="sidebar">
+			<div class="region region-sidebar">
+				
+				  
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><div id="block-menu-resources" class="block block-menu">
+	<h2>Innhold</h2>
+	<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Forord/index.html">Forord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduksjon/index.html">Introduksjon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hva-er-aapne-data/index.html">Hva menes med å åpne opp offentlige data?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hvorfor-aapne-data/index.html">Hvorfor åpne data?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hvordan-aapne-opp-data/index.html">Hvordan åpne opp data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Slik-stimulerer-du-til-viderebruk/index.html">Slik stimulerer du til viderebruk</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Vedlegg</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="begreper-og-definisjoner.html">Begreper og definisjoner</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Oversikt filformat</a></li>
+</ul>
+</li>
+</ul>
+
+</div><div id="block-menu-resources" class="block block-menu">
+	<h2>Bidra</h2>
+	Vil du bidra til å gjøre veilederen bedre? <a href="https://github.com/difi/veileder-opnedata/issues">Meld inn forslag til endringer og forbedringer her</a>, send oss en epost på <a href="mailto:opne@difi.no">open@difi.no</a> eller tweet <a href="https://twitter.com/opnedata">@opnedata</a>.
+</div>
+        </div>
+      </div>
+				
+			</div>
+		</div>
+	</div>
+  <div id="footer">
+
+    <div id="contact">
+
+      Direktoratet for forvaltning og IKT
+
+      - <a href="http://www.difi.no/">www.difi.no</a>
+
+      - <a href="mailto:open@difi.no">open@difi.no</a>
+
+       - +47 22 45 10 00
+
+       - Org.nr: 991 825 827
+
+       - <a href="http://data.norge.no/personvernpolicy">Personvern</a>       - <a href="http://data.norge.no/vilk%C3%A5r-bruk-av-nettstedet">Vilkår</a>    </div>
+      </div>
+  </div>
+  </body>
+</html>

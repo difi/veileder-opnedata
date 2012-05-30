@@ -1,0 +1,258 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+	background-color:#f0f0f0;
+	font-size: 10pt;
+	line-height:1.6em;
+}
+
+#page {
+	font-family:Verdana,Arial,sans-serif;
+	color:rgb(60,61,62);
+}
+a {
+	color:rgb(60,61,62);
+}
+
+h1 {
+	font-size: 18pt;
+}
+h2 {
+	margin-bottom: 0pt;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th {
+	padding-top: 2pt;
+	padding-bottom: 2pt;
+}
+
+#site-name {
+	font-size: 27pt;
+}
+#site-name {
+	margin: 0px;
+	padding: 15pt;
+	padding-left: 10pt;
+	padding-top: 15pt;
+	font-weight: bold;
+}
+#site-name a {
+	text-decoration: none;
+}
+
+#page {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15pt;
+	padding-top: 0pt;
+	width: auto !important;
+	width: 800pt;
+	max-width: 800pt;
+	min-width: 600pt;
+}
+
+#header {
+	padding-top:15pt;
+	position:relative;
+}
+
+#parent {
+	background-color:#005281;
+	padding:5pt;
+}  
+
+#name-and-slogan {
+	display: table-cell;
+	vertical-align: middle;
+	/*height: 80pt; */
+	padding-left: 5pt;
+	width: 100%;
+}
+#name-and-slogan h1 {
+	font-size: 27pt;
+	padding-bottom: 0pt;
+	margin: 0px;
+	margin-bottom: 0pt;
+}
+#name-and-slogan a {
+	color: rgb(60, 61, 62);
+	text-decoration: none;
+}
+#name-and-slogan div.description {
+	margin-top: 12pt;
+	font-size: 12pt;
+	letter-spacing: 1px;
+}
+
+#footer {
+	background-color: rgb(95, 96, 98);
+	clear: both;
+	color: #fff;
+	padding: 4pt;
+	text-align: center;
+}
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#parent, #navigation, #footer {
+	-webkit-border-radius: 4pt;
+	-moz-border-radius: 4pt;
+	border-radius: 4pt;
+}
+
+#navigation{
+	background-color:#5F6062;
+	height:21pt;
+}
+
+#main-menu, , #navigation div.item-list {
+	height: 21pt;
+}
+#main-menu ul, #navigation div.item-list ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#main-menu li, #navigation div.item-list li {
+	background-position: 1px 11px;
+	background-repeat: no-repeat;
+	background-image: url("ms-left.png");
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin: 0px;
+}
+#main-menu li a, #navigation div.item-list li a {
+	background-position: right 11px;
+	background-repeat: no-repeat;
+	background-image: url("ms-right.png");
+	border-left: 1px solid #fff;
+	display: block;
+	color: #fff;
+	padding: 4pt;
+	padding-left: 13pt;
+	padding-right: 13pt;
+	text-decoration: none;
+}
+#main-menu li.first, #navigation div.item-list li.first {
+	background-image: none;
+	margin-left: -30pt;
+}
+#main-menu li.first a, #navigation div.item-list li.first a {
+	border: 0px;
+}
+#main-menu li.last a, #navigation div.item-list li.last a {
+	border-right: 0px;
+	background-image: none;
+}
+#main-menu li.meta {
+	float: right;
+}
+#main-menu li.meta-first a {
+	background-image: none;
+}
+#main-menu li.meta-last {
+	background-image: none;
+}
+#main-menu li.meta-last a {
+	border: 0px;
+}
+
+#main-menu a:hover {
+	text-decoration: underline;
+}
+
+
+div.has-sidebar {
+	padding-right: 210pt !important;
+}
+
+div.has-content_above {
+		
+}
+
+#main {
+	margin-top: 10pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	min-height: 300pt;
+}
+
+#content {
+	float: left;
+	padding-bottom: 10pt;
+	width: 100%;
+}
+#content h1 {
+	margin-top: 10pt;
+}
+
+#sidebar {
+	float: left;
+	margin-left: 10pt;
+	margin-right: -210pt;
+	padding-bottom: 10pt;
+	width: 200pt;
+}
+#sidebar h2 {
+	font-size: 10pt;
+}
+
+div.content ul.menu {
+	margin: 0px;
+	padding: 0px;
+}
+div.content ul.menu ul.menu {
+	margin-left: 15pt;
+}
+div.content ul.menu li {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+}
+
+div.breadcrumb {
+	margin: 10pt;
+	margin-bottom: 0pt;
+	
+}
+
+div.field-type-image div.even {
+	float: right;
+	margin-left: 10pt;
+}
+
+div.field-type-image div.odd {
+	float: left;
+	margin-right: 10pt;
+}
+
+body.not-front div.field-type-image div.even, body.not-front div-field-type-image div.odd {
+	float: none;
+	margin-left: 0px;
+	text-align: center;
+}
+
+#navigation div.item-list {
+	float: right;
+}
+
+#content_above {
+	margin-top: 5pt;
+}
+#content_above div.block-difi-back {
+	padding: 10pt;
+}
